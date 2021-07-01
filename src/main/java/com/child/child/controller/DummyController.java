@@ -23,10 +23,5 @@ public class DummyController {
         return new ResponseEntity<>(dummyDto, HttpStatus.OK);
     }
 
-    @PostMapping (value = "/dummy")
-    public ResponseEntity<DummyDto> CreateDummy()
-    {
-        DummyDto dummyDto = dummyService.getDummy();
-        return new ResponseEntity<>(dummyDto, HttpStatus.OK);
-    }
+
 }
